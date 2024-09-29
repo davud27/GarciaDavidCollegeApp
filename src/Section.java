@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Section {
+public class Section implements Comparable {
     private int sectionNumber;
     private String courseNumber;
     private int instructorId;
@@ -12,5 +12,8 @@ public class Section {
     private ArrayList<Student> studentList;
 
 
-
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
 }
