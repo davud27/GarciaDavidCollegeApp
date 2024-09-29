@@ -10,24 +10,6 @@ public class GenericBag<E extends Comparable> {
         nElems = 0;
     }
 
-    public E[] removeCopy(Class clazz, Predicate<E> predicate) {
-        E[] matchArr = (E[]) (Array.newInstance(clazz, nElems));
-        int matchCount = 0;
-        for (int i = 0; i < nElems; i++) {
-            if (predicate.test(arr[i])) {
-                matchArr[matchCount++] = arr[i];
-//				for (int j = i; j < nElems - 1; j++) {
-//					arr[j] = arr[j + 1];
-//				}
-//				i--;
-                arr[i] = arr[nElems-1];
-                nElems--;
-            }
-        }
-        return Arrays.copyOf(matchArr, matchCount);
-    }
-
-
     public E[] removeShifting(Class clazz, Predicate<E> predicate) {
         E[] matchArr = (E[]) (Array.newInstance(clazz, nElems));
         int matchCount = 0;

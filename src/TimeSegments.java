@@ -1,9 +1,13 @@
+import java.time.LocalTime;
 
-public enum TimeSegments {
-    //Early Morning = 7:30 - 9:10
-    //Morning = 9:30 - 10:45
-    //Late Morning 11:00 - 12:30
-    //Early Afternoon 12:30 - 1:45
-    //Afternoon 2:00 - 3-15
-    EARLY_MORNING, MORNING,
-}
+public class TimeSegments {
+        private LocalTime startTime;
+        private LocalTime endTime;
+
+        public TimeSegments(LocalTime startTime, LocalTime endTime){
+            this.startTime = startTime;
+            this.endTime = endTime;
+
+        }
+    }
+

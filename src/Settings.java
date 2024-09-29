@@ -1,6 +1,7 @@
 public enum Settings {
     MAX_COURSE_SIZE(200),
-    MAX_SECTION_SIZE(1000);
+    MAX_SECTION_SIZE(1000),
+    MAX_MAJORS(4);
 
     private int maxSize;
 
