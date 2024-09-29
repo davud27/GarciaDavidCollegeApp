@@ -15,6 +15,26 @@ public class Course implements Comparable {
         this.sectionList = sectionList;
     }
 
+    public String getCourseTitle() {
+        return courseTitle;
+    }
+
+    public String getCourseNumber() {
+        return courseNumber;
+    }
+
+    public double getCredits() {
+        return credits;
+    }
+
+    public ArrayList<Majors> getRequiredMajors() {
+        return requiredMajors;
+    }
+
+    public ArrayList<Section> getSectionList() {
+        return sectionList;
+    }
+
     public int compareTo(Object o) {
         return 0;
     }

@@ -5,7 +5,7 @@ public class SectionContainer {
     }
     public void addSection(Section section){
         sectionBag.add(section);
-        System.out.println("Section added: " + section);
+        System.out.println("Section added: " + section.getSectionNumber() + " for course " + section.getCourseNumber());
     }
     public void displaySections() {
         System.out.println("Current Sections:");

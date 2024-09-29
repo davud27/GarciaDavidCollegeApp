@@ -7,7 +7,7 @@ public class CourseContainer {
 
     public void addCourse(Course course){
         courseBag.add(course);
-        System.out.println("Course added: " + course);
+        System.out.println("Course added: " + course.getCourseNumber());
     }
     public void displaySections() {
         System.out.println("Current Course:");

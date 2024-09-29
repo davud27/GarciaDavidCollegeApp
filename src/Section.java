@@ -22,6 +22,38 @@ public class Section implements Comparable {
         this.studentList = studentList;
     }
 
+    public int getSectionNumber() {
+        return sectionNumber;
+    }
+
+    public String getCourseNumber() {
+        return courseNumber;
+    }
+
+    public int getInstructorId() {
+        return instructorId;
+    }
+
+    public String getClassroomId() {
+        return classroomId;
+    }
+
+    public boolean isOnline() {
+        return isOnline;
+    }
+
+    public ArrayList<DaysOfTheWeek> getDaysOffered() {
+        return daysOffered;
+    }
+
+    public TimeSegments getTimeOffered() {
+        return timeOffered;
+    }
+
+    public ArrayList<Student> getStudentList() {
+        return studentList;
+    }
+
     @Override
     public int compareTo(Object o) {
         return 0;

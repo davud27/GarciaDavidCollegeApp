@@ -53,15 +53,19 @@ public class CourseGenerator {
                         break;
                     case 1:
                         arr.add(Majors.CSE);
+                        System.out.println("Added CSE");
                         break;
                     case 2:
                         arr.add(Majors.MAT);
+                        System.out.println("Added MAT");
                         break;
                     case 3:
                         arr.add(Majors.ENG);
+                        System.out.println("Added ENG");
                         break;
                     case 4:
                         arr.add(Majors.HIS);
+                        System.out.println("Added HIS");
                         break;
                 }
             }

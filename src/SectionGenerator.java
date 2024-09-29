@@ -20,10 +20,11 @@ public class SectionGenerator {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the CRN of the section \n ex: 09765 \n");
         return scanner.nextInt();
+
     }
     private String inputCourseNumber(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter the Course Number of the section \n ex: 09765 \n");
+        System.out.println("Please enter the Course Number of the section \n ex: CSE218 \n");
         return scanner.nextLine();
     }
     private int inputInstructorId(){
@@ -70,24 +71,32 @@ public class SectionGenerator {
                     break;
                 case 1:
                     arr.add(DaysOfTheWeek.MON);
+                    System.out.println("Added Monday");
                     break;
                 case 2:
                     arr.add(DaysOfTheWeek.TUES);
+                    System.out.println("Added Tuesday");
                     break;
                 case 3:
                     arr.add(DaysOfTheWeek.WED);
+                    System.out.println("Added Wednesday");
+
                     break;
                 case 4:
                     arr.add(DaysOfTheWeek.THUR);
+                    System.out.println("Added Thursday");
                     break;
                 case 5:
                     arr.add(DaysOfTheWeek.FRI);
+                    System.out.println("Added Friday");
                     break;
                 case 6:
                     arr.add(DaysOfTheWeek.SAT);
+                    System.out.println("Added Saturday");
                     break;
                 case 7:
                     arr.add(DaysOfTheWeek.SUN);
+                    System.out.println("Added Sunday");
                     break;
             }
         }
