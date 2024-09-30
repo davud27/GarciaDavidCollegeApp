@@ -6,10 +6,11 @@ public class GenericBag<E extends Comparable> {
     private int nElems;
 
     public GenericBag(Class clazz, int maxSize) {
+//Creates an array of generic type E that holds a class and has a max size
         arr = (E[]) (Array.newInstance(clazz, maxSize));
         nElems = 0;
     }
-
+//Removes a specific value in the bag and shifts all other values to fill in the empty index
     public E[] removeShifting(Class clazz, Predicate<E> predicate) {
         E[] matchArr = (E[]) (Array.newInstance(clazz, nElems));
         int matchCount = 0;
@@ -25,7 +26,7 @@ public class GenericBag<E extends Comparable> {
         }
         return Arrays.copyOf(matchArr, matchCount);
     }
-
+//Sequentially Searches for a specific value in the array and returns an array of any value that matched the search
     public E[] search(Class clazz, Predicate<E> predicate) {
         E[] matchArr = (E[]) (Array.newInstance(clazz, nElems));
         int matchCount = 0;
@@ -36,7 +37,7 @@ public class GenericBag<E extends Comparable> {
         }
         return Arrays.copyOf(matchArr, matchCount);
     }
-
+//Adds a value to the bag
     public void add(E value) {
         arr[nElems++] = value;
     }
